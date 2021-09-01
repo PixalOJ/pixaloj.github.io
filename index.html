@@ -125,7 +125,7 @@
                     ></button>
                   </div>
                   <div class="modal-body"><p><font color="black">
-                      现在访问PixalOJ v1.0可能导致不可逆的兼容性问题，是否继续？
+                      我们已经停止对PixalOJ Gen1的支持，请知悉。
                       </font></p></div>
                   <div class="modal-footer">
                     <button
@@ -145,8 +145,8 @@
               </div>
             </div>
                             <a href="https://pixaloj.github.io/Welcome">
-                                <button type="button" class="btn btn-success">
-                                    预览我们的最新进度
+                                <button type="button" class="btn btn-primary">
+                                    查看我们的最新版本
                       </button>
                       </a>
                         </div>
@@ -206,43 +206,12 @@
         </div>
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             © 2021 HEXAGON.
-            <p><font color="grey">Powered by MDB</font></p>
+            <p><font color="grey"></font></p>
         </div>
         <!-- Copyright -->
         </footer>
         <!--Footer-->
         
-        <!-- Time Counter -->
-        <script type="text/javascript">
-            // Set the date we're counting down to
-            var countDownDate = new Date();
-            countDownDate.setDate(countDownDate.getDate() + 30);
-            
-            // Update the count down every 1 second
-            var x = setInterval(function () {
-                // Get todays date and time
-                var now = new Date().getTime();
-                
-                // Find the distance between now an the count down date
-                var distance = countDownDate - now;
-                
-                // Time calculations for days, hours, minutes and seconds
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                
-                // Display the result in the element with id="demo"
-                document.getElementById('time-counter').innerHTML =
-                days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's ';
-                
-                // If the count down is finished, write some text
-                if (distance < 0) {
-                    clearInterval(x);
-                    document.getElementById('time-counter').innerHTML = 'EXPIRED';
-                }
-            }, 1000);
-        </script>
         <!-- MDB -->
         <script type="text/javascript" src="js/mdb.min.js"></script>
         <!-- Custom scripts -->
